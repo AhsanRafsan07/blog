@@ -45,3 +45,7 @@ Route::get('/registration', function () {
 // Route::get('/product/{id}', function($id){
 //     return 'Product id is ' .$id;
 // });
+
+//cart Items
+Route::post('/add-to-cart','CartController@addToCart');
+Route::get('/mycart', 'CartController@mycart');
