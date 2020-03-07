@@ -7,8 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
+  <meta name = "_token" content="{{ csrf_token() }}">
 
-  <title>Shop Homepage - Start Bootstrap Template</title>
+  <title>Shop Homepage - </title>
 
   <!-- Bootstrap core CSS -->
   <link href="{{asset('/css/bootstrap.min.css')}}" rel="stylesheet">
@@ -29,7 +30,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Start Bootstrap</a>
+      <a class="navbar-brand" href="#">My Shop</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -55,7 +56,7 @@
   </nav>
 
   <!-- Page Content -->
-  <div class="container">
+  <div class="container-fluid">
 
    @yield('content')
     <!-- /.row -->
