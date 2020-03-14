@@ -71,8 +71,15 @@
 	Route::get('/admin/dashboard', 'DashboardController@index');
 	Route::get('/admin/products', 'ProductController@index');
 
+	//Routes for Categories
 
-
+	Route::get('/admin/categories', 'CategoryController@index');
+	Route::get('/admin/category/create', 'CategoryController@create');
+	Route::post('/admin/category/store', 'CategoryController@store');	
+	Route::get('/admin/category/edit/{id}', 'CategoryController@edit');
+	Route::post('/admin/category/update', 'CategoryController@update');
+	Route::get('/admin/category/show/{id}', 'CategoryController@show');
+	Route::get('/admin/category/deleteRecord/{id}', 'CategoryController@deleteRecord');
 
 	});
 

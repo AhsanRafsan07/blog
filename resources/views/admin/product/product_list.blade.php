@@ -42,7 +42,7 @@
                       <td>{{ $i }}</td>
                       <td>{{ $products->product_sku }}</td>
                       <td>{{ $products->product_name }}</td>
-                      <td>{{ $products->product_name }}</td>
+                      <td><img class="" src="{{ asset('images/product_image/'.$products->product_image) }}"  width='50' height='50' alt="SHOW IMAGE HERE"></td>
                       <td>{{ $products->product_price }}</td>
                       <td></td>
                     </tr>
